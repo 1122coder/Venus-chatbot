@@ -1,6 +1,6 @@
 # Venus App - Women's Welfare Chatbot
 
-Venus App is a women's welfare application designed to empower and support women by providing essential information and resources through an interactive chatbot. This project utilizes a Rasa-powered backend for handling chat functionalities and a React frontend for user interaction.
+Venus App is a women's welfare application designed to empower and support women by providing essential information and resources through an interactive chatbot. This project utilizes a Rasa-powered backend for handling chat functionalities.
 
 ## Features
 
