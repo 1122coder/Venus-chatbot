@@ -1,0 +1,71 @@
+version: "2.0"
+rules:
+  - rule: greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: provide information about menstruation
+    steps:
+      - intent: ask_about_menstruation
+      - action: utter_ask_about_menstruation
+
+  - rule: provide information about menopause
+    steps:
+      - intent: ask_about_menopause
+      - action: utter_ask_about_menopause
+
+  - rule: provide information about hormonal cycles
+    steps:
+      - intent: ask_about_hormonal_cycles
+      - action: utter_ask_about_hormonal_cycles
+
+  - rule: provide information about psychological impacts
+    steps:
+      - intent: ask_about_psychological_impacts
+      - action: utter_ask_about_psychological_impacts
+
+  - rule: provide guidelines information
+    steps:
+      - intent: ask_about_guidelines
+      - action: utter_ask_about_guidelines
+
+  - rule: provide support information
+    steps:
+      - intent: ask_about_support
+      - action: utter_ask_about_support
+
+  - rule: provide resources information
+    steps:
+      - intent: ask_about_resources
+      - action: utter_ask_about_resources
+
+  - rule: provide information about Venus app
+    steps:
+      - intent: ask_about_venus_app
+      - action: utter_ask_about_venus_app
+
+  - rule: provide app overview information
+    steps:
+      - intent: ask_about_app_overview
+      - action: utter_ask_about_app_overview
+
+  - rule: provide information about general health
+    steps:
+      - intent: ask_about_general_health
+      - action: utter_ask_about_general_health
+
+  - rule: provide information about diet and nutrition
+    steps:
+      - intent: ask_about_diet_and_nutrition
+      - action: utter_ask_about_diet_and_nutrition
+
+  - rule: handle out of scope queries
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope

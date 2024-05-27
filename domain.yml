@@ -1,0 +1,119 @@
+version: "2.0"
+intents:
+  - greet
+  - goodbye
+  - ask_about_menstruation
+  - ask_about_menopause
+  - ask_about_hormonal_cycles
+  - ask_about_psychological_impacts
+  - ask_about_guidelines
+  - ask_about_support
+  - ask_about_resources
+  - ask_about_venus_app
+  - ask_about_general_health
+  - ask_about_diet_and_nutrition
+  - ask_about_app_overview
+  - out_of_scope
+
+entities:
+  - menstruation
+  - menopause
+  - hormonal_cycles
+  - psychological_impacts
+  - guidelines
+  - support
+  - resources
+  - venus_app
+
+slots:
+  menstruation:
+    type: text
+    mappings:
+      - type: from_text
+  menopause:
+    type: text
+    mappings:
+      - type: from_text
+  hormonal_cycles:
+    type: text
+    mappings:
+      - type: from_text
+  psychological_impacts:
+    type: text
+    mappings:
+      - type: from_text
+  guidelines:
+    type: text
+    mappings:
+      - type: from_text
+  support:
+    type: text
+    mappings:
+      - type: from_text
+  resources:
+    type: text
+    mappings:
+      - type: from_text
+  venus_app:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today with your health queries?"
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to return if you have more questions."
+
+  utter_ask_about_menstruation:
+    - text: >
+        Menstruation is the monthly shedding of the uterine lining. It can affect mood and physical health. Common symptoms include cramps, bloating, and mood swings. Managing menstrual pain can include over-the-counter pain relief, exercise, and relaxation techniques. A balanced diet and hydration can also help. Learn more at [PubMed](https://pubmed.ncbi.nlm.nih.gov/).
+
+  utter_ask_about_menopause:
+    - text: >
+        Menopause marks the end of a woman's reproductive years. Symptoms can include hot flashes, night sweats, mood changes, and sleep problems. Treatments range from hormone replacement therapy to natural remedies like dietary changes and exercise. Consult with a healthcare provider for personalized advice. More details at [JAMA](https://jamanetwork.com/).
+
+  utter_ask_about_hormonal_cycles:
+    - text: >
+        Hormonal cycles include phases like menstruation, follicular phase, ovulation, and luteal phase. These cycles impact both physical and mental health. Hormonal fluctuations can affect mood, energy levels, and physical symptoms like acne. Understanding your cycle can help manage these effects. Explore more at [The Lancet](https://www.thelancet.com/).
+
+  utter_ask_about_psychological_impacts:
+    - text: >
+        Hormonal changes can significantly impact mental health, leading to mood swings, anxiety, and depression. Coping strategies include therapy, medication, lifestyle changes, and support from friends and family. Regular exercise, a healthy diet, and mindfulness practices can also be beneficial. Read more at [BMJ](https://www.bmj.com/).
+
+  utter_ask_about_guidelines:
+    - text: >
+        Guidelines on managing women's health issues can be found at reputable health organizations like [NHS](https://www.nhs.uk/), [CDC](https://www.cdc.gov/), and [WHO](https://www.who.int/). It's important to follow best practices for menstrual hygiene, regular check-ups, and a healthy lifestyle. Specific guidelines for managing menopause and PMS are also available.
+
+  utter_ask_about_support:
+    - text: >
+        I'm here to provide emotional support. It's important to talk about how you're feeling. Please share more about what's going on. You can also find support groups, online communities, and hotlines for immediate help. Mindfulness, relaxation techniques, and self-care practices can help manage stress and anxiety. Visit [Mental Health America](https://www.mhanational.org/) for resources.
+
+  utter_ask_about_resources:
+    - text: >
+        You can find more information on women's health at reputable sources like [PubMed](https://pubmed.ncbi.nlm.nih.gov/), [Mayo Clinic](https://www.mayoclinic.org/), and [Johns Hopkins Medicine](https://www.hopkinsmedicine.org/). Support groups, books, podcasts, and reputable blogs are also valuable resources. Online courses and documentaries can provide in-depth knowledge.
+
+  utter_ask_about_venus_app:
+    - text: >
+        The Venus app offers features to track your menstrual cycle, manage menopause symptoms, and provide mental health support. It includes personalized advice, health tips, and resources for women's health. The app can send medication reminders, sync with fitness trackers, and offers a community feature for support.
+
+  utter_ask_about_app_overview:
+    - text: >
+        The Venus app is designed to offer personalized mental wellness support and counseling for women, focusing on hormonal cycles, menstruation, and menopause. It provides real-time mood and symptom tracking, tailored responses based on individual health data, stress and anxiety management techniques, guided meditations, educational content, and integration with wearable health devices. You can ask questions about menstrual health, menopause, hormonal cycles, mental wellness, and general health tips.
+
+  utter_ask_about_general_health:
+    - text: >
+        Maintaining overall health involves a balanced diet, regular exercise, proper sleep, and stress management. Regular check-ups and preventive care are also important. For more tips, visit [Healthline](https://www.healthline.com/).
+
+  utter_ask_about_diet_and_nutrition:
+    - text: >
+        A balanced diet includes a variety of foods from all food groups: fruits, vegetables, grains, protein foods, and dairy. Staying hydrated and limiting added sugars, sodium, and saturated fats is important. For detailed dietary guidelines, check [MyPlate](https://www.myplate.gov/).
+
+  utter_out_of_scope:
+    - text: >
+        I'm here to assist you with information related to women's health, hormonal cycles, menstruation, menopause, and mental wellness. For other topics, please consult a relevant service or expert.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

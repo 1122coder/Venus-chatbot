@@ -1,0 +1,216 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good evening
+      - howdy
+      - greetings
+
+  - intent: goodbye
+    examples: |
+      - goodbye
+      - bye
+      - see you later
+      - take care
+      - farewell
+      - talk to you later
+
+  - intent: ask_about_menstruation
+    examples: |
+      - What can you tell me about menstruation?
+      - I need information on menstrual health.
+      - How does menstruation affect mental health?
+      - What are common symptoms during menstruation?
+      - How can I manage menstrual pain?
+      - What is the average length of a menstrual cycle?
+      - Can menstruation cause headaches?
+      - How does diet affect menstruation?
+      - Are there any exercises to help with menstrual pain?
+      - What are some natural remedies for menstrual cramps?
+      - How does stress impact menstruation?
+      - Can menstruation affect sleep patterns?
+      - What hormonal changes occur during menstruation?
+      - How can menstrual irregularities be treated?
+      - What is the connection between menstruation and mood swings?
+      - Can menstruation cause digestive issues?
+      - How does menstrual health change with age?
+
+  - intent: ask_about_menopause
+    examples: |
+      - Can you explain menopause?
+      - What are the symptoms of menopause?
+      - How does menopause impact mental wellness?
+      - What treatments are available for menopause symptoms?
+      - How long does menopause last?
+      - What are hot flashes and how can I manage them?
+      - Is weight gain common during menopause?
+      - How does menopause affect bone health?
+      - Are there natural treatments for menopause symptoms?
+      - What lifestyle changes can help with menopause?
+      - Can hormone replacement therapy help with menopause?
+      - How does menopause affect cardiovascular health?
+      - What is perimenopause?
+      - How can I deal with night sweats during menopause?
+      - Are there psychological effects of menopause?
+      - How can menopause impact sleep?
+      - What dietary changes can help during menopause?
+
+  - intent: ask_about_hormonal_cycles
+    examples: |
+      - Tell me about hormonal cycles.
+      - How do hormonal cycles influence mood?
+      - What are the different phases of hormonal cycles?
+      - What is the follicular phase?
+      - Explain the luteal phase.
+      - How do estrogen levels change during the cycle?
+      - What is ovulation and when does it occur?
+      - How do hormonal cycles affect fertility?
+      - Can hormonal cycles cause acne?
+      - What is the role of progesterone in the cycle?
+      - How do hormonal imbalances occur?
+      - Can birth control affect hormonal cycles?
+      - What hormonal changes occur during the menstrual cycle?
+      - How can tracking hormonal cycles help with family planning?
+      - What are common hormonal disorders affecting women?
+      - How do hormonal cycles impact energy levels?
+      - Can diet influence hormonal cycles?
+
+  - intent: ask_about_psychological_impacts
+    examples: |
+      - What are the psychological impacts of hormonal changes?
+      - How do hormonal fluctuations affect mental health?
+      - Explain the mental effects of menopause.
+      - How can I manage anxiety during hormonal changes?
+      - What are common emotional symptoms of hormonal changes?
+      - Can hormonal changes cause depression?
+      - How do hormonal cycles impact mood swings?
+      - What are some coping strategies for emotional symptoms?
+      - How can therapy help with hormonal-related mental health issues?
+      - Are there medications that can help with hormonal impacts on mental health?
+      - Can lifestyle changes improve mental health during hormonal changes?
+      - How does PMS affect mental health?
+      - What is the connection between hormones and sleep disturbances?
+      - How can hormonal changes impact cognitive function?
+      - Are there support groups for dealing with hormonal impacts on mental health?
+
+  - intent: ask_about_guidelines
+    examples: |
+      - What are the guidelines for managing menopause?
+      - Can you provide guidelines on menstrual health?
+      - What does the NHS say about hormonal cycles?
+      - What are the CDC recommendations for women's health?
+      - What guidelines does WHO provide for menopause?
+      - Are there official guidelines for managing PMS?
+      - How can I follow best practices for menstrual hygiene?
+      - What are the dietary guidelines for managing menopause symptoms?
+      - How often should I visit a gynecologist for check-ups?
+      - What preventive measures can I take for hormonal health?
+      - Are there exercise guidelines for women experiencing menopause?
+      - What mental health guidelines are recommended for women during menopause?
+      - How should I manage symptoms of PCOS?
+      - What are the guidelines for using hormone replacement therapy?
+      - What should I know about cervical cancer screening?
+
+  - intent: ask_about_support
+    examples: |
+      - I need emotional support.
+      - Can you help me with my mental health?
+      - I am feeling depressed.
+      - How can I manage stress related to hormonal changes?
+      - I need advice on dealing with anxiety.
+      - Where can I find support groups for menopause?
+      - Are there online communities for women's health support?
+      - How can I talk to a therapist about my hormonal issues?
+      - What self-care tips can help with emotional well-being?
+      - Are there hotlines for immediate emotional support?
+      - How can mindfulness help with stress management?
+      - What are some relaxation techniques for anxiety?
+      - How can I find a mental health professional who specializes in women's health?
+      - What are some resources for dealing with postpartum depression?
+      - Can meditation help with hormonal imbalances?
+      - What are some ways to improve my mental resilience?
+
+  - intent: ask_about_resources
+    examples: |
+      - Where can I find more information on women's health?
+      - Are there any support groups for menopause?
+      - Can you recommend books on menstrual health?
+      - What websites offer reliable information on hormonal cycles?
+      - Where can I get professional help for mental health issues?
+      - What are some reputable women's health clinics?
+      - Can you suggest any podcasts on women's health?
+      - Are there mobile apps for tracking menstrual cycles?
+      - What are some good online courses on women's health?
+      - Where can I find scientific articles on menopause?
+      - What are some useful blogs about hormonal health?
+      - Are there any documentaries on women's health issues?
+      - What are some online forums for discussing women's health topics?
+      - Can you recommend any YouTube channels focused on women's health?
+      - Are there any local workshops on managing hormonal health?
+
+  - intent: ask_about_venus_app
+    examples: |
+      - What features does the Venus app offer?
+      - How can the Venus app help me with my health?
+      - Can the Venus app track my menstrual cycle?
+      - How do I use the Venus app for menopause management?
+      - What support does the Venus app provide for mental health?
+      - Can the Venus app send reminders for medication?
+      - How do I set up my profile on the Venus app?
+      - Is there a community feature in the Venus app?
+      - Can the Venus app sync with my fitness tracker?
+      - How does the Venus app handle data privacy?
+      - Are there any subscription fees for the Venus app?
+      - How can I contact support for the Venus app?
+      - What are the benefits of using the Venus app for symptom tracking?
+      - Does the Venus app offer personalized health tips?
+      - Can the Venus app help with stress management?
+
+  - intent: ask_about_general_health
+    examples: |
+      - How can I improve my overall health?
+      - What are some tips for maintaining a healthy lifestyle?
+      - Can you provide advice on diet and nutrition?
+      - How much exercise should I get each week?
+      - What are the benefits of regular physical activity?
+      - How can I improve my sleep quality?
+      - What are some strategies for managing stress?
+      - How can I boost my immune system?
+      - What are the best ways to stay hydrated?
+      - Can you recommend some healthy recipes?
+      - What are the symptoms of dehydration?
+      - How can I improve my mental well-being?
+      - What are some effective ways to quit smoking?
+      - How can I reduce my risk of chronic diseases?
+      - What are the benefits of regular medical check-ups?
+
+  - intent: ask_about_diet_and_nutrition
+    examples: |
+      - What is a balanced diet?
+      - Can you suggest some healthy meal plans?
+      - How can I ensure I'm getting enough vitamins and minerals?
+      - What foods should I avoid for better health?
+      - How can I manage my weight through diet?
+      - What are the benefits of eating organic foods?
+      - Can you recommend some high-protein foods?
+      - What are some good sources of dietary fiber?
+      - How can I reduce my sugar intake?
+      - What are the health benefits of a plant-based diet?
+      - How does diet affect hormonal balance?
+      - What are some nutritious snacks for on-the-go?
+      - Can you provide tips for meal prepping?
+      - What are the benefits of drinking green tea?
+      - How can I improve my gut health through diet?
+
+  - intent: ask_about_app_overview
+    examples: |
+      - What is this app about?
+      - Can you explain the purpose of this app?
+      - What can I do with this app?
+      - How can this app help me?
+      - What features does this app have?
+      - What kind of support does this app provide
